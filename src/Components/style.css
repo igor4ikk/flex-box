@@ -1,0 +1,72 @@
+.content{
+    background-color: blueviolet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.item{
+    /* background-color: yellow; */
+    height: 100vh;
+   
+    display: flex;
+    flex-basis: 25%;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Courgette', cursive;
+    transition: all 0.2s;
+}
+
+.item span{
+    color: white;
+    font-size: 40px;
+}
+
+.item:hover{
+        flex-basis: 50%;
+}
+
+@media (max-width: 670px){
+    .content{
+        height: 100vh;
+        flex-flow: column;
+    }
+    .item{
+        width: 100%;
+
+        &:hover{
+            flex-grow: 100%;
+        }
+    }
+}
+
+.item1{
+    background-image: url('./img/sammer1.jpg') ;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.item2{
+    background-image: url('./img/summer2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.item3{
+    background-image: url('./img/summer3.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.item4{
+    background-image: url('./img/summer5.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+/* justify-content  - вирівнювання по горизонталі
+align-items   - вирівнювання по вертикалі
+
+Якщо є блок у блоці задаємо ці 2 значеня у 2 блоках */
